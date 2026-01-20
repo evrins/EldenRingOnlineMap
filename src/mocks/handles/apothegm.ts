@@ -1,7 +1,7 @@
 import { rest } from 'msw';
-import apothegmData from '../data/apothegm';
-import type { Apothegm, Reply } from '../../utils/typings';
-import type { ApothegmType } from '../../utils/enum';
+import apothegmData from '@/mocks/data/apothegm';
+import type { Apothegm, Reply } from '@/utils/typings';
+import type { ApothegmType } from '@/utils/enum';
 
 /**
  * mix apothegm and apo_reply

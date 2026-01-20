@@ -1,5 +1,5 @@
-import { MapIcon } from '../components/icons';
-import { ApothegmType, MapPointType } from './enum';
+import { MapIcon } from '@/components/icons';
+import { ApothegmType, MapPointType } from '@/utils/enum';
 
 /**
  * 所有筛选选项

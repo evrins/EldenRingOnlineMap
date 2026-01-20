@@ -1,5 +1,5 @@
 <script lang="ts">
-import RouteViewer from "../components/RouteViewer/RouteViewer.svelte";
+import RouteViewer from '@/components/RouteViewer/RouteViewer.svelte';
 
 
   //

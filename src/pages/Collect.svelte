@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { collectionSet } from '../stores';
-  import { getSiteTypeFilters } from '../utils/filters';
+  import { collectionSet } from '@/stores';
+  import { getSiteTypeFilters } from '@/utils/filters';
   import { t } from 'svelte-i18n';
   import axios from 'axios';
-  import * as config from '../config';
-  import { testdata } from '../utils/testdata';
-  import { MapType } from '../utils/enum';
+  import * as config from '@/config';
+  import { testdata } from '@/utils/testdata';
+  import { MapType } from '@/utils/enum';
 
   $: filters = getSiteTypeFilters($t);
 

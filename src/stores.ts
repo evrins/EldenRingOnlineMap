@@ -3,13 +3,13 @@
  * @author wniko
  */
 import { get, Writable, writable } from 'svelte/store';
-import type { MapPoint } from './utils/typings';
+import type { MapPoint } from '@/utils/typings';
 import { ConvertType } from 'zhconvertor';
-import { persist, PersistentStore } from './utils/persist';
+import { persist, PersistentStore } from '@/utils/persist';
 import { locale } from 'svelte-i18n';
-import type { SupportedLang } from './utils/enum';
-import { getCookie, setCookie } from './utils/utils';
-import Config from './config';
+import type { SupportedLang } from '@/utils/enum';
+import { getCookie, setCookie } from '@/utils/utils';
+import Config from '@/config';
 
 // Stores
 

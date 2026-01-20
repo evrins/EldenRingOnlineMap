@@ -2,10 +2,10 @@
     自定义调整位置控件
 -->
 <script lang="ts">
-  import UpArrow from '../../assets/icons/icon-up-arrow.svg';
-  import DownArrow from '../../assets/icons/icon-down-arrow.svg';
-  import LeftArrow from '../../assets/icons/icon-left-arrow.svg';
-  import RightArrow from '../../assets/icons/icon-right-arrow.svg';
+  import UpArrow from '@/assets/icons/icon-up-arrow.svg';
+  import DownArrow from '@/assets/icons/icon-down-arrow.svg';
+  import LeftArrow from '@/assets/icons/icon-left-arrow.svg';
+  import RightArrow from '@/assets/icons/icon-right-arrow.svg';
 
   export let onClick: (direction: string) => void = () => {};
   export let style: string = '';

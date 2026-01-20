@@ -1,4 +1,4 @@
-import type { langType } from '../../utils/typings';
+import type { langType } from '@/utils/typings';
 const lang: langType = {
   name: '正體中文',
   title: '老頭環地圖 EldenRing Map',

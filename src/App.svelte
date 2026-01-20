@@ -3,16 +3,16 @@
 -->
 <script lang="ts">
   import Router, { location } from 'svelte-spa-router';
-  import { routes } from './router/router';
-  import MenuItem from './components/MenuItem.svelte';
+  import { routes } from '@/router/router';
+  import MenuItem from '@/components/MenuItem.svelte';
   import { t, isLoading } from 'svelte-i18n';
   import { onMount } from 'svelte';
-  import { getCookie, setCookie } from './utils/utils';
-  import * as config from './config';
-  import UpdateContentModal from './components/UpdateContentModal.svelte';
-  import CooperationModal from './components/CooperationModal.svelte';
-  import { lang } from './stores';
-  import { SupportedLang } from './utils/enum';
+  import { getCookie, setCookie } from '@/utils/utils';
+  import * as config from '@/config';
+  import UpdateContentModal from '@/components/UpdateContentModal.svelte';
+  import CooperationModal from '@/components/CooperationModal.svelte';
+  import { lang } from '@/stores';
+  import { SupportedLang } from '@/utils/enum';
   import { layeringCoffmanGraham } from 'd3-dag';
 
   let updateVisibility = false;

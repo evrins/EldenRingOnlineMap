@@ -1,7 +1,7 @@
 import { rest } from 'msw';
-import type { MapPoint } from '../../utils/typings';
-import type { MapPointType } from '../../utils/enum';
-import mapdata from '../data/map';
+import type { MapPoint } from '@/utils/typings';
+import type { MapPointType } from '@/utils/enum';
+import mapdata from '@/mocks/data/map';
 
 let map: MapPoint[] = mapdata;
 map = map.sort((a, b) => {

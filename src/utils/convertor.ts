@@ -1,5 +1,5 @@
 import zhConvertor, { ConvertType } from 'zhconvertor';
-import { convertTargetStore } from '../stores';
+import { convertTargetStore } from '@/stores';
 import { get } from 'svelte/store';
 export { ConvertType } from 'zhconvertor';
 

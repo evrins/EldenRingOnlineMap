@@ -1,4 +1,4 @@
-import { type Box, BoxTypes } from './types';
+import { type Box, BoxTypes } from '@/components/RouteViewer/types';
 
 export const boxes: Box[] = [
   { id: 0, name: '开始', type: BoxTypes.Start, pids: [] },

@@ -1,10 +1,10 @@
 <script lang="ts">
   import { afterUpdate, onMount } from 'svelte';
-  import type { Box } from './types';
-  import Drawer from './drawer';
-  import { boxes } from './data';
-  import './box.css';
-  import Modal from '../Modal.svelte';
+  import type { Box } from '@/components/RouteViewer/types';
+  import Drawer from '@/components/RouteViewer/drawer';
+  import { boxes } from '@/components/RouteViewer/data';
+  import '@/components/RouteViewer/box.css';
+  import Modal from '@/components/Modal.svelte';
 
   // 初始化地图宽高
   /** 地图div宽度 */

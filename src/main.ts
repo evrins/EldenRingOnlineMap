@@ -2,11 +2,11 @@
  * 入口文件喵
  */
 import axios from 'axios';
-import App from './App.svelte';
-import Config from './config';
-import { set_client_ip } from './utils/utils';
-import { setupI18n } from './locale';
-import { transferOldStorage } from './stores';
+import App from '@/App.svelte';
+import Config from '@/config';
+import { set_client_ip } from '@/utils/utils';
+import { setupI18n } from '@/locale';
+import { transferOldStorage } from '@/stores';
 
 // 设置api根目录
 axios.defaults.baseURL = Config.APIBaseURL;

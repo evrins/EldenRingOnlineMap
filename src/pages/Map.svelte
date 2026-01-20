@@ -4,7 +4,7 @@
    * 但内容几乎全写到MapView里了
    * 算了就这样吧，懒得改了，能跑就行
    */
-  import MapView from '../components/MapView.svelte';
+  import MapView from '@/components/MapView.svelte';
   import { onMount } from 'svelte';
   import { querystring, location } from 'svelte-spa-router';
   import qs from 'qs';

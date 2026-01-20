@@ -1,17 +1,17 @@
 <script lang="ts">
   import axios from 'axios';
   import { onMount } from 'svelte';
-  import Modal from '../components/Modal.svelte';
-  import { isAdminModeStore } from '../stores';
+  import Modal from '@/components/Modal.svelte';
+  import { isAdminModeStore } from '@/stores';
   import { t } from 'svelte-i18n';
-  import type { Statistics } from '../utils/typings';
-  import { getSiteTypeFilters } from '../utils/filters';
-  import * as config from '../config';
+  import type { Statistics } from '@/utils/typings';
+  import { getSiteTypeFilters } from '@/utils/filters';
+  import * as config from '@/config';
 
-  import SubscriptLink7 from '../assets/icons/icon-subscript-link-7.svg';
-  import SubscriptLink10 from '../assets/icons/icon-subscript-link-10.svg';
-  import UpdateContentModal from '../components/UpdateContentModal.svelte';
-  import CooperationModal from '../components/CooperationModal.svelte';
+  import SubscriptLink7 from '@/assets/icons/icon-subscript-link-7.svg';
+  import SubscriptLink10 from '@/assets/icons/icon-subscript-link-10.svg';
+  import UpdateContentModal from '@/components/UpdateContentModal.svelte';
+  import CooperationModal from '@/components/CooperationModal.svelte';
 
   onMount(() => {
     clickTime = 0;

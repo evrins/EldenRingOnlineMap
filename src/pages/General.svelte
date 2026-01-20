@@ -1,16 +1,16 @@
 <script lang="ts">
-  import LangButton from '../components/button/LangButton.svelte';
-  import ImportButton from '../components/button/ImportButton.svelte';
-  import ExportButton from '../components/button/ExportButton.svelte';
-  import * as config from '../config';
+  import LangButton from '@/components/button/LangButton.svelte';
+  import ImportButton from '@/components/button/ImportButton.svelte';
+  import ExportButton from '@/components/button/ExportButton.svelte';
+  import * as config from '@/config';
 
-  import { SupportedLang } from '../utils/enum';
+  import { SupportedLang } from '@/utils/enum';
   import { t } from 'svelte-i18n';
-  import { lang } from '../stores';
-  import { ConvertType } from '../utils/convertor';
-  import { convertTargetStore, isMobile, hiddenSet } from '../stores';
+  import { lang } from '@/stores';
+  import { ConvertType } from '@/utils/convertor';
+  import { convertTargetStore, isMobile, hiddenSet } from '@/stores';
 
-  import Warning from '../assets/icons/icon-warning.svg';
+  import Warning from '@/assets/icons/icon-warning.svg';
 </script>
 
 <header>

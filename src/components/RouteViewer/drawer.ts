@@ -1,4 +1,4 @@
-import type { Box } from './types';
+import type { Box } from '@/components/RouteViewer/types';
 import { dagStratify, sugiyama, DagNode, zherebko, grid } from 'd3-dag';
 
 export default class Drawer {

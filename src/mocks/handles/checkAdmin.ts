@@ -1,5 +1,5 @@
 import { rest } from 'msw';
-import { ADMINPASSWORD } from '../data/admin';
+import { ADMINPASSWORD } from '@/mocks/data/admin';
 
 export default [
     rest.post('/api/checkAdmin.php', (req, res, ctx) => {

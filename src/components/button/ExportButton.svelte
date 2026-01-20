@@ -1,7 +1,7 @@
 <script lang="ts">
   import { saveAs } from 'file-saver';
-  import { hiddenSet, collectionSet } from '../../stores';
-  import { StorageSerializers, Serializer } from '../../utils/persist';
+  import { hiddenSet, collectionSet } from '@/stores';
+  import { StorageSerializers, Serializer } from '@/utils/persist';
   import dayjs from 'dayjs';
   import { t } from 'svelte-i18n';
 

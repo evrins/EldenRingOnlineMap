@@ -1,39 +1,39 @@
 <script lang="ts">
   // leaflet 需要 leaflet.css， 这里通过 rollup-plugin-css-only 将其打包到 bundle.css
-  import '../../node_modules/leaflet/dist/leaflet.css';
+  import '@/../node_modules/leaflet/dist/leaflet.css';
   import L, { TileLayer } from 'leaflet';
   import type { LeafletMouseEvent } from 'leaflet';
   import { afterUpdate, onMount } from 'svelte';
-  import Modal from './Modal.svelte';
+  import Modal from '@/components/Modal.svelte';
   import { fly } from 'svelte/transition';
-  import { MapPointType, MapType, PointPosition } from '../utils/enum';
+  import { MapPointType, MapType, PointPosition } from '@/utils/enum';
   import axios from 'axios';
-  import { allMarkers, collectionSet, hiddenSet, ip, isAdminModeStore, isMobile, setAllMarkers } from '../stores';
-  import type { MapPoint, Reply } from '../utils/typings';
-  import { MapIcon } from './icons';
-  import './icons.css';
-  import { getCookie, getMD5Id, setCookie } from '../utils/utils';
-  import DirectionControl from './MapViewComponents/DirectionControl.svelte';
-  import { getConvertedText, getKeywordText } from '../utils/convertor';
+  import { allMarkers, collectionSet, hiddenSet, ip, isAdminModeStore, isMobile, setAllMarkers } from '@/stores';
+  import type { MapPoint, Reply } from '@/utils/typings';
+  import { MapIcon } from '@/components/icons';
+  import '@/components/icons.css';
+  import { getCookie, getMD5Id, setCookie } from '@/utils/utils';
+  import DirectionControl from '@/components/MapViewComponents/DirectionControl.svelte';
+  import { getConvertedText, getKeywordText } from '@/utils/convertor';
   import { t } from 'svelte-i18n';
-  import { getSiteTypeFilters } from '../utils/filters';
+  import { getSiteTypeFilters } from '@/utils/filters';
   import zhConvertor from 'zhconvertor';
   import jQuery from 'jquery';
-  import RightMenu from './MapViewComponents/RightMenu.svelte';
-  import * as config from '../config';
-  import * as privateConfig from '../privateConfig';
-  import '../../node_modules/spinkit/spinkit.min.css';
+  import RightMenu from '@/components/MapViewComponents/RightMenu.svelte';
+  import * as config from '@/config';
+  import * as privateConfig from '@/privateConfig';
+  import '@/../node_modules/spinkit/spinkit.min.css';
 
-  import SearchIcon from '../assets/icons/icon-search.svg';
-  import QuitMark from '../assets/icons/icon-quit-mark.svg';
-  import AddMark from '../assets/icons/icon-add-mark.svg';
-  import Toggle from '../assets/icons/icon-toggle.svg';
-  import FilterClose from '../assets/icons/icon-close.svg';
-  import Edit from '../assets/icons/icon-edit.svg';
-  import Delete from '../assets/icons/icon-delete.svg';
-  import Collect from '../assets/icons/icon-collect.svg';
-  import Remark from '../assets/icons/icon-remark.svg';
-  import { testdata } from '../utils/testdata';
+  import SearchIcon from '@/assets/icons/icon-search.svg';
+  import QuitMark from '@/assets/icons/icon-quit-mark.svg';
+  import AddMark from '@/assets/icons/icon-add-mark.svg';
+  import Toggle from '@/assets/icons/icon-toggle.svg';
+  import FilterClose from '@/assets/icons/icon-close.svg';
+  import Edit from '@/assets/icons/icon-edit.svg';
+  import Delete from '@/assets/icons/icon-delete.svg';
+  import Collect from '@/assets/icons/icon-collect.svg';
+  import Remark from '@/assets/icons/icon-remark.svg';
+  import { testdata } from '@/utils/testdata';
   import md5 from 'md5';
 
   /** 是否禁用拖动而采用方向按钮控制，适用于一些移动app的引用 */

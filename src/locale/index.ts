@@ -1,10 +1,10 @@
 import { addMessages, register, init, waitLocale } from 'svelte-i18n';
 import { get } from 'svelte/store';
-import { lang } from '../stores';
-import { SupportedLang } from '../utils/enum';
+import { lang } from '@/stores';
+import { SupportedLang } from '@/utils/enum';
 
 // for defaultly ja
-// import ja from './lang/ja';
+// import ja from '@/locale/lang/ja';
 
 // export async function setupI18n() {
 //   addMessages(SupportedLang.ja, ja);
@@ -17,7 +17,7 @@ import { SupportedLang } from '../utils/enum';
 //   return waitLocale();
 // }
 
-import zhCN from './lang/zh-CN';
+import zhCN from '@/locale/lang/zh-CN';
 
 export async function setupI18n() {
   addMessages(SupportedLang.zhCN, zhCN);

@@ -2,6 +2,7 @@ import { defineConfig } from 'rollup';
 import svelte from 'rollup-plugin-svelte';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import alias from '@rollup/plugin-alias';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import { svelteSVG } from "rollup-plugin-svelte-svg";
@@ -12,6 +13,7 @@ import { babel } from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
 import copy from 'rollup-plugin-copy';
 import del from 'rollup-plugin-delete'
+import path from 'path'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -49,6 +51,11 @@ export default defineConfig({
   plugins: [
     del({ targets: 'public/build/*.js*' }),
     json(),
+    alias({
+      entries: [
+        { find: '@', replacement: path.resolve(__dirname, 'src') }
+      ]
+    }),
     svelteSVG({
       // optional SVGO options
       // pass empty object to enable defaults

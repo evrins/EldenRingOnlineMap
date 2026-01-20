@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Modal from './Modal.svelte';
-  import DownloadOnTheAppStoreIcon from '../assets/icons/icon-download_on_the_App_Store_Badge_CNSC_RGB_wht_092917.svg';
+  import Modal from '@/components/Modal.svelte';
+  import DownloadOnTheAppStoreIcon from '@/assets/icons/icon-download_on_the_App_Store_Badge_CNSC_RGB_wht_092917.svg';
   export let cooperationModalVisibility: boolean = false;
   export let isOpenningWhileSiteStart: boolean = true;
   export let onOKButtonClick: () => void = () => {};

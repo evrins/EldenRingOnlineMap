@@ -2,7 +2,7 @@
  * 这个文件用来定义各种类型喵
  * @author wniko
  */
-import type { ApothegmType, MapPointType, MapType, PointPosition } from './enum';
+import type { ApothegmType, MapPointType, MapType, PointPosition } from '@/utils/enum';
 export type { langType } from '../locale/lang/zh-CN';
 
 /** 地标 */

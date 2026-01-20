@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { hiddenSet, collectionSet } from '../../stores';
-  import { StorageSerializers, Serializer } from '../../utils/persist';
+  import { hiddenSet, collectionSet } from '@/stores';
+  import { StorageSerializers, Serializer } from '@/utils/persist';
   import { t } from 'svelte-i18n';
   import { get } from 'svelte/store';
 

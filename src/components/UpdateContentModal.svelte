@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Modal from './Modal.svelte';
-  import * as config from '../config';
-  import { isMobile } from '../stores';
+  import Modal from '@/components/Modal.svelte';
+  import * as config from '@/config';
+  import { isMobile } from '@/stores';
 
-  import SubscriptLink7 from '../assets/icons/icon-subscript-link-7.svg';
-  import SubscriptLink10 from '../assets/icons/icon-subscript-link-10.svg';
+  import SubscriptLink7 from '@/assets/icons/icon-subscript-link-7.svg';
+  import SubscriptLink10 from '@/assets/icons/icon-subscript-link-10.svg';
 
   export let updateVisibility: boolean = false;
   export let onOKButtonClick: () => void = () => {};

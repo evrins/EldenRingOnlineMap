@@ -4,8 +4,8 @@
  */
 import axios from 'axios';
 import md5 from 'md5';
-import { setIp } from '../stores';
-import type { GetIPPositionReturn } from './typings';
+import { setIp } from '@/stores';
+import type { GetIPPositionReturn } from '@/utils/typings';
 
 /**
  * 获取IP和地址

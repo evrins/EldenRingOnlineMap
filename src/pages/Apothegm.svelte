@@ -3,23 +3,23 @@
    * 讯息页
    */
   import { onMount } from 'svelte';
-  import Modal from '../components/Modal.svelte';
-  import { ip, isAdminModeStore } from '../stores';
+  import Modal from '@/components/Modal.svelte';
+  import { ip, isAdminModeStore } from '@/stores';
   import { fly } from 'svelte/transition';
   import axios from 'axios';
-  import type { Apothegm } from '../utils/typings';
-  import { ApothegmType } from '../utils/enum';
+  import type { Apothegm } from '@/utils/typings';
+  import { ApothegmType } from '@/utils/enum';
 
   import { t } from 'svelte-i18n';
-  import { getApoFilters } from '../utils/filters';
+  import { getApoFilters } from '@/utils/filters';
 
-  import Edit from '../assets/icons/icon-edit.svg';
-  import SendMyself from '../assets/icons/icon-send-myself.svg';
-  import Pin from '../assets/icons/icon-pin.svg';
-  import Search from '../assets/icons/icon-search.svg';
-  import Left from '../assets/icons/icon-left-arrow.svg';
-  import Comment from '../assets/icons/icon-comment.svg';
-  import { getMD5Id } from '../utils/utils';
+  import Edit from '@/assets/icons/icon-edit.svg';
+  import SendMyself from '@/assets/icons/icon-send-myself.svg';
+  import Pin from '@/assets/icons/icon-pin.svg';
+  import Search from '@/assets/icons/icon-search.svg';
+  import Left from '@/assets/icons/icon-left-arrow.svg';
+  import Comment from '@/assets/icons/icon-comment.svg';
+  import { getMD5Id } from '@/utils/utils';
 
   let apo_filters = getApoFilters($t);
 

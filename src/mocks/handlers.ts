@@ -1,7 +1,7 @@
-import mapHandlers from './handles/map';
-import isRequestHandles from './handles/isRequest';
-import checkAdminHandles from './handles/checkAdmin';
-import apothegmHandles from './handles/apothegm';
+import mapHandlers from '@/mocks/handles/map';
+import isRequestHandles from '@/mocks/handles/isRequest';
+import checkAdminHandles from '@/mocks/handles/checkAdmin';
+import apothegmHandles from '@/mocks/handles/apothegm';
 
 export const handlers = [
     ...mapHandlers,
